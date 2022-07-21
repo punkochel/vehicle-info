@@ -265,5 +265,7 @@ stock GetVehicleType(vehicleid)
 */
 stock GetVehicleSpeed(vehicleid)
 {
-    return floatround((floatsqroot(floatpower(ac_x, 2.0) + floatpower(ac_y, 2.0) + floatpower(ac_z, 2.0)) * 179.28625) * 0.56);
+    new Float:X, Float:Y, Float:Z;
+    GetVehicleVelocity(vehicleid, X, Y, Z);
+    return floatround((floatpower(X, 2.0) + floatpower(Y, 2.0) + floatpower(Z, 2.0) * 179.28625) * 0.56);
 }
