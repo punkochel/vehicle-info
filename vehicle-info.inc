@@ -6,7 +6,7 @@
 #define MAX_VEHICLE_MODELS 212
 #define MAX_VEHICLE_NAME 28
 
-enum e_VehicleCategory {
+enum {
     OFF_ROAD,
     SALOONS,
     SPORT,
@@ -24,7 +24,7 @@ enum e_VehicleCategory {
     BIKES
 };
 
-enum e_VehicleType {
+enum {
     CAR,
     HELICOPTE,
     BOAT,
